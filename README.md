@@ -1,18 +1,6 @@
-## Getting Started
+## USACO Attempts
+This repository contains my attempts at USACO problems. I am currently working on the Bronze level problems. I will be updating this repository as I complete more problems.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+You might be wondering why I'm creating *yet another* USACO repository, but maybe we all have unique solutions, methods, and more. I also want to use this as motivation to keep working on USACO problems.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+I'm using the Java programming language, even though C++ is faster, because I'm more comfortable with Java syntax.

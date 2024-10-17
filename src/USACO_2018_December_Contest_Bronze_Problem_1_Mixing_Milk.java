@@ -1,30 +1,19 @@
 import java.util.*;
 import java.io.*;
-import java.lang.*;
 
 public class USACO_2018_December_Contest_Bronze_Problem_1_Mixing_Milk {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("mixmilk.in"));
+        PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("mixmilk.out")));
+        
         int[] capacity = new int[3];
         int[] amountOfMilk = new int[3];
 
-
         for(int i = 0; i < 3; i++) {
-            capacity[i] = sc.nextInt();
-            amountOfMilk[i] = sc.nextInt();
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            capacity[i] = Integer.parseInt(st.nextToken());
+            amountOfMilk[i] = Integer.parseInt(st.nextToken());
         }
-
-/*
-SAMPLE INPUT:
-10 3
-11 4
-12 5
-
-SAMPLE OUTPUT:
-0
-10
-2
- */
 
         for(int i = 0; i < 100; i++) {            
             int remainder = i % 3;
@@ -42,11 +31,13 @@ SAMPLE OUTPUT:
                 amountOfMilk[2] -= transferAmount;              
                 amountOfMilk[0] += transferAmount;
             }
-
         }
 
         for(int i = 0; i < 3; i++) {
-            System.out.println(amountOfMilk[i]);
+            pw.println(amountOfMilk[i]);
         }
+
+        br.close();
+        pw.close();
     }
 }
